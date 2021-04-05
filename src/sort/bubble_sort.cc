@@ -3,7 +3,7 @@
 
 void print_array(const std::vector<int>& arr)
 {
-    std::cout << "The array is: "
+    std::cout << "The array is: ";
     for (size_t i = 0; i < arr.size(); ++i) {
         std::cout << arr[i] << " ";
     }
@@ -13,10 +13,15 @@ void print_array(const std::vector<int>& arr)
 void bubble_sort(std::vector<int>& arr)
 {
     for (size_t i = 0; i < arr.size(); ++i) {
-        for (size_t j = 0; j < arr.size() - i; ++j) {
+        for (size_t j = 0; j < arr.size() - i - 1; ++j) {
             if (arr[j + 1] < arr[j]) {
+                // int tmp = arr[j];
+                // arr[j] = arr[j + 1];
+                // arr[j + 1] = tmp;
+
+                // No additional variables need to be introduces
                 arr[j] += arr[j + 1];
-                arr[j + 1] -= arr[j];
+                arr[j + 1] = arr[j] - arr[j + 1];
                 arr[j] -= arr[j + 1];
             }
         }
