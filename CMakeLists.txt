@@ -13,3 +13,6 @@ add_executable(bubble_sort ${BUBBLE_SORT_SOURCE_FILES})
 file(GLOB REVERSE_INTEGER_SOURCE_FILES src/array/reverse_integer.cc)
 add_executable(reverse_integer ${REVERSE_INTEGER_SOURCE_FILES})
 
+file(GLOB SAME_TREE_SOURCE_FILES src/tree/same_tree.cc)
+add_executable(same_tree ${SAME_TREE_SOURCE_FILES})
+
