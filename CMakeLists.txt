@@ -19,3 +19,6 @@ add_executable(same_tree ${SAME_TREE_SOURCE_FILES})
 file(GLOB PLUS_ONE_SOURCE_FILES src/array/plus_one.cc)
 add_executable(plus_one ${PLUS_ONE_SOURCE_FILES})
 
+file(GLOB MERGE_INTERVALS_SOURCE_FILES src/array/merge_intervals.cc)
+add_executable(merge_intervals ${MERGE_INTERVALS_SOURCE_FILES})
+
