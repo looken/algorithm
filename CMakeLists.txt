@@ -10,3 +10,6 @@ include_directories(src)
 file(GLOB BUBBLE_SORT_SOURCE_FILES src/sort/bubble_sort.cc)
 add_executable(bubble_sort ${BUBBLE_SORT_SOURCE_FILES})
 
+file(GLOB REVERSE_INTEGER_SOURCE_FILES src/array/reverse_integer.cc)
+add_executable(reverse_integer ${REVERSE_INTEGER_SOURCE_FILES})
+
