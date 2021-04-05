@@ -16,3 +16,6 @@ add_executable(reverse_integer ${REVERSE_INTEGER_SOURCE_FILES})
 file(GLOB SAME_TREE_SOURCE_FILES src/tree/same_tree.cc)
 add_executable(same_tree ${SAME_TREE_SOURCE_FILES})
 
+file(GLOB PLUS_ONE_SOURCE_FILES src/array/plus_one.cc)
+add_executable(plus_one ${PLUS_ONE_SOURCE_FILES})
+
